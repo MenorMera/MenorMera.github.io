@@ -3,7 +3,7 @@
 ## Descripción
 Empresa dedicada al desarrollo de sistemas operativos minimalistas, optimizados para eficiencia y rendimiento en una amplia gama de dispositivos y aplicaciones.
 
-## Nuestro Sistema Operativo
+## Nuestro Sistema Operativo InfinityEvoOS
 MinimalOS es un sistema operativo ligero diseñado para ofrecer un rendimiento óptimo en hardware de recursos limitados. Características principales incluyen:
 
 - **Diseño Minimalista**: Interfaz de usuario limpia y sin adornos para una experiencia de usuario fluida.
