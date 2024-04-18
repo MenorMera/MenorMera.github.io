@@ -41,4 +41,4 @@ Si tienes preguntas, comentarios o sugerencias, no dudes en ponerte en contacto 
 - Sitio Web: [www.infinitievolution.com](https://menormera.github.io/)
 
 ## Licencia
-MinimalOS está bajo la licencia [Licencia XYZ]. Consulta el archivo `LICENSE` para más detalles.
+Infinite Evolutión está bajo la licencia [Licencia XYZ]. Consulta el archivo `LICENSE` para más detalles.
