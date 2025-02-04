@@ -1,5 +1,180 @@
+/* Reset básico */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #ff7e5f, #feb47b, #ff6b6b, #ffa07a);
+    color: #333;
+    line-height: 1.6;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode {
+    background: radial-gradient(circle, #1e1e2f, #2a2a40, #1e1e2f, #2a2a40);
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem; /* Tamaño inicial para pantallas grandes */
+    font-weight: 600;
+    color: inherit;
+    padding: 0 10px; /* Añadir un poco de padding para evitar que el texto toque los bordes */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: inherit;
+}
+
+section {
+    margin: 40px 0;
+    padding: 40px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.5s ease, border 0.5s ease;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: inherit;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: inherit;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: inherit;
+}
+
+.buy-button {
+    display: inline-block;
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+    background: #0097a7;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: inherit;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Reducir el tamaño del título en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Reducir aún más el tamaño del título en pantallas pequeñas */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reducir el margen entre elementos del menú */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Reducir el tamaño de la fuente del menú */
+    }
 }
