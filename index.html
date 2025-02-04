@@ -1,17 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<head>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Componentes Gamer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Procimas pagina web</h1>
-    <p>
-        esta pagina se estara trabajando, Con el proposito de crear un sitio web en el cual se subira todo sobre los futuros abances de una futura empresa emergente. 
-    </p>
+    <header>
+        <div class="container">
+            <h1>Componentes Gamer</h1>
+            <nav>
+                <ul>
+                    <li><a href="#procesadores">Procesadores</a></li>
+                    <li><a href="#tarjetas-graficas">Tarjetas Gráficas</a></li>
+                    <li><a href="#memoria-ram">Memoria RAM</a></li>
+                    <li><a href="#almacenamiento">Almacenamiento</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">
+                <span id="theme-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <section id="procesadores" class="glass">
+        <div class="container">
+            <h2>Procesadores</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Procesador 1">
+                    <h3>Procesador AMD Ryzen 9 5950X</h3>
+                    <p>El mejor procesador para gaming y productividad.</p>
+                    <a href="https://www.amazon.com" target="_blank" class="buy-button">Comprar en Amazon</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Procesador 2">
+                    <h3>Procesador Intel Core i9-13900K</h3>
+                    <p>Potencia extrema para gamers y creadores de contenido.</p>
+                    <a href="https://www.newegg.com" target="_blank" class="buy-button">Comprar en Newegg</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarjetas-graficas" class="glass">
+        <div class="container">
+            <h2>Tarjetas Gráficas</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Tarjeta Gráfica 1">
+                    <h3>NVIDIA GeForce RTX 4090</h3>
+                    <p>La tarjeta gráfica más potente del mercado.</p>
+                    <a href="https://www.amazon.com" target="_blank" class="buy-button">Comprar en Amazon</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Tarjeta Gráfica 2">
+                    <h3>AMD Radeon RX 7900 XTX</h3>
+                    <p>Rendimiento excepcional para juegos en 4K.</p>
+                    <a href="https://www.newegg.com" target="_blank" class="buy-button">Comprar en Newegg</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="memoria-ram" class="glass">
+        <div class="container">
+            <h2>Memoria RAM</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Memoria RAM 1">
+                    <h3>Corsair Vengeance RGB Pro 32GB</h3>
+                    <p>Memoria RGB de alta velocidad para gaming.</p>
+                    <a href="https://www.amazon.com" target="_blank" class="buy-button">Comprar en Amazon</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Memoria RAM 2">
+                    <h3>G.Skill Trident Z Neo 32GB</h3>
+                    <p>Diseñada para AMD Ryzen, ideal para gamers.</p>
+                    <a href="https://www.newegg.com" target="_blank" class="buy-button">Comprar en Newegg</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="almacenamiento" class="glass">
+        <div class="container">
+            <h2>Almacenamiento</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Almacenamiento 1">
+                    <h3>Samsung 970 EVO Plus 1TB</h3>
+                    <p>SSD NVMe de alto rendimiento.</p>
+                    <a href="https://www.amazon.com" target="_blank" class="buy-button">Comprar en Amazon</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Almacenamiento 2">
+                    <h3>Western Digital Black SN850X 2TB</h3>
+                    <p>SSD para gamers y creadores de contenido.</p>
+                    <a href="https://www.newegg.com" target="_blank" class="buy-button">Comprar en Newegg</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Componentes Gamer. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
